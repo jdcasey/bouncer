@@ -1,0 +1,12 @@
+logs: 
+  url: 'http://somewhere.com/logs?from={from}&to={to}&env={var-env}'
+  vars:
+    var-env: 
+      from: 'regex|upshift-(.+)|1'
+      to: 'strformat|newcastle-{val}'
+    from: 
+      from: 'epoch'
+      to: 'iso8601'
+    to:
+      from: 'epoch'
+      to: 'iso8601'
